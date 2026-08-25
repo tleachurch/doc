@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>楽曲利用・翻訳字幕に関する権利確認報告書｜こころごすぺる Splash 2026</title>
+<style>
+:root{
+  --ink:#12203a;
+  --ink-soft:#41506b;
+  --paper:#fbfaf7;
+  --paper-2:#f2efe8;
+  --rule:#d8d3c7;
+  --brass:#9a7326;
+  --brass-soft:#f0e6cf;
+  --alert:#8c3a2b;
+  --alert-soft:#f7e8e4;
+  --ok:#3f6b4a;
+  --ok-soft:#e6efe7;
+  --mincho: "Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP",serif;
+  --gothic: "Hiragino Kaku Gothic ProN","Yu Gothic","YuGothic","Noto Sans JP","Helvetica Neue",Arial,sans-serif;
+  --wrap: 1080px;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--gothic);
+  font-size:16px;
+  line-height:1.85;
+  overflow-x:hidden;
+  word-break:break-word;
+  overflow-wrap:anywhere;
+}
+img{max-width:100%;}
+
+/* ---------- header ---------- */
+.masthead{
+  background:var(--ink);
+  color:var(--paper);
+  padding:44px 20px 38px;
+  border-bottom:5px solid var(--brass);
+}
+.masthead__inner{max-width:var(--wrap);margin:0 auto;}
+.eyebrow{
+  font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--brass-soft);margin:0 0 14px;font-weight:600;
+}
+.masthead h1{
+  font-family:var(--mincho);
+  font-size:clamp(1.5rem,5.2vw,2.5rem);
+  line-height:1.4;margin:0 0 14px;font-weight:600;
+  letter-spacing:.02em;
+}
+.masthead p{margin:0;font-size:.95rem;color:#c8d0de;line-height:1.8;}
+.masthead .meta{margin-top:20px;font-size:.85rem;color:#9fadc2;}
+
+/* ---------- layout ---------- */
+.shell{max-width:var(--wrap);margin:0 auto;padding:0 20px 90px;}
+.layout{display:block;}
+
+/* ---------- toc ---------- */
+.toc{
+  background:var(--paper-2);
+  border:1px solid var(--rule);
+  border-radius:3px;
+  padding:20px 22px;
+  margin:32px 0 8px;
+}
+.toc h2{
+  font-family:var(--mincho);font-size:.95rem;margin:0 0 12px;
+  letter-spacing:.08em;color:var(--brass);
+}
+.toc ol{margin:0;padding-left:1.3em;font-size:.9rem;line-height:2;}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent;}
+.toc a:hover,.toc a:focus{border-bottom-color:var(--brass);}
+
+/* ---------- sections ---------- */
+section{margin-top:56px;scroll-margin-top:16px;}
+h2.sec{
+  font-family:var(--mincho);
+  font-size:clamp(1.15rem,3.6vw,1.55rem);
+  margin:0 0 6px;font-weight:600;line-height:1.45;
+  padding-bottom:12px;border-bottom:2px solid var(--ink);
+  display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;
+}
+h2.sec .num{
+  font-family:var(--gothic);font-size:.68rem;letter-spacing:.16em;
+  color:var(--brass);font-weight:700;flex:none;
+}
+h3.sub{
+  font-family:var(--mincho);font-size:1.02rem;font-weight:600;
+  margin:34px 0 10px;padding-left:12px;border-left:4px solid var(--brass);
+  line-height:1.6;
+}
+p{margin:0 0 15px;}
+.lead{font-size:.98rem;}
+ul.plain{margin:0 0 16px;padding-left:1.25em;}
+ul.plain li{margin-bottom:8px;}
+
+/* ---------- data tables → mobile cards ---------- */
+.tbl-wrap{margin:14px 0 20px;}
+table{width:100%;border-collapse:collapse;font-size:.88rem;line-height:1.75;}
+thead th{
+  background:var(--ink);color:var(--paper);
+  text-align:left;padding:10px 13px;font-weight:600;
+  font-size:.8rem;letter-spacing:.04em;
+}
+tbody td{
+  border-bottom:1px solid var(--rule);
+  padding:12px 13px;vertical-align:top;
+}
+tbody tr:nth-child(even){background:#f6f4ef;}
+th.rowlabel,td.rowlabel{
+  background:var(--paper-2);font-weight:600;width:30%;
+  border-bottom:1px solid var(--rule);padding:12px 13px;
+  text-align:left;vertical-align:top;
+}
+
+/* ---------- callouts ---------- */
+.callout{
+  border-left:4px solid var(--brass);
+  background:var(--brass-soft);
+  padding:16px 18px;margin:18px 0;
+  font-size:.9rem;line-height:1.85;border-radius:0 3px 3px 0;
+}
+.callout--alert{border-left-color:var(--alert);background:var(--alert-soft);}
+.callout--ok{border-left-color:var(--ok);background:var(--ok-soft);}
+.callout p:last-child{margin-bottom:0;}
+.callout strong{font-weight:700;}
+.callout .ttl{
+  display:block;font-weight:700;font-size:.82rem;letter-spacing:.06em;
+  margin-bottom:7px;
+}
+.callout--alert .ttl{color:var(--alert);}
+.callout--ok .ttl{color:var(--ok);}
+.callout .ttl{color:var(--brass);}
+
+/* ---------- respondent cards ---------- */
+.co{
+  border:1px solid var(--rule);border-radius:3px;
+  background:#fff;margin:18px 0;overflow:hidden;
+}
+.co__head{
+  background:var(--paper-2);padding:14px 18px;
+  border-bottom:1px solid var(--rule);
+}
+.co__name{
+  font-family:var(--mincho);font-size:1.05rem;font-weight:600;
+  margin:0 0 6px;line-height:1.5;
+}
+.co__songs{font-size:.82rem;color:var(--ink-soft);margin:0;}
+.co__body{padding:16px 18px;font-size:.9rem;}
+.co__body p{margin:0 0 12px;}
+.co__body p:last-child{margin-bottom:0;}
+.co__body ul{margin:0 0 12px;padding-left:1.2em;}
+.co__body li{margin-bottom:7px;}
+.chip{
+  display:inline-block;font-size:.72rem;font-weight:700;
+  padding:3px 10px;border-radius:2px;letter-spacing:.04em;
+  margin-top:8px;
+}
+.chip--ok{background:var(--ok-soft);color:var(--ok);border:1px solid #bcd2c1;}
+.chip--wait{background:var(--paper-2);color:var(--ink-soft);border:1px solid var(--rule);}
+.chip--cond{background:var(--brass-soft);color:var(--brass);border:1px solid #dcc99b;}
+.chip--stop{background:var(--alert-soft);color:var(--alert);border:1px solid #e0bcb3;}
+
+/* ---------- footer ---------- */
+.foot{
+  margin-top:70px;padding-top:22px;border-top:2px solid var(--ink);
+  font-size:.82rem;color:var(--ink-soft);
+}
+
+/* ---------- mobile ---------- */
+@media (max-width:720px){
+  body{font-size:15px;line-height:1.8;}
+  .masthead{padding:32px 16px 28px;}
+  .shell{padding:0 16px 64px;}
+  section{margin-top:44px;}
+
+  /* tables become stacked cards — no horizontal scrolling */
+  table,thead,tbody,tr,td,th{display:block;width:100%;}
+  thead{
+    position:absolute;width:1px;height:1px;
+    margin:-1px;padding:0;overflow:hidden;
+    clip-path:inset(50%);white-space:nowrap;
+  }
+  tbody tr{
+    border:1px solid var(--rule);border-radius:3px;
+    background:#fff!important;margin-bottom:14px;padding:4px 0;
+  }
+  tbody td,th.rowlabel,td.rowlabel{
+    border-bottom:1px dashed var(--rule);
+    padding:9px 14px;width:100%;background:transparent;
+    line-height:1.75;
+  }
+  tbody tr td:last-child{border-bottom:none;}
+  /* ラベルは絶対配置。値側は通常のインラインフローを保つため、
+     strong や br を含むセルでも文が分断されない */
+  td[data-label]{position:relative;padding-left:calc(6.4em + 20px);}
+  td[data-label]::before{
+    content:attr(data-label);
+    position:absolute;left:14px;top:12px;width:6.4em;
+    font-size:.68rem;font-weight:700;letter-spacing:.06em;
+    color:var(--brass);line-height:1.5;white-space:pre-line;
+  }
+  td.rowlabel,th.rowlabel{
+    font-weight:700;background:var(--paper-2);
+    border-bottom:1px solid var(--rule);
+  }
+  .co__head,.co__body{padding:13px 15px;}
+  .toc{padding:16px 18px;}
+  h2.sec{gap:0;flex-direction:column;}
+}
+
+@media print{
+  body{background:#fff;font-size:10.5pt;}
+  .masthead{background:#fff;color:#000;border-bottom:2px solid #000;}
+  .masthead p,.masthead .meta{color:#333;}
+  .eyebrow{color:#666;}
+  .toc{display:none;}
+  section{break-inside:auto;}
+  h2.sec{break-after:avoid;}
+  .co,.callout,tbody tr{break-inside:avoid;}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead__inner">
+    <p class="eyebrow">Rights Clearance Report</p>
+    <h1>楽曲利用・翻訳字幕に関する<br>権利確認報告書</h1>
+    <p>公演「こころごすぺる Splash 〜 2026 SUMMER 〜」（2026年8月11日／なかのZERO 小ホール）</p>
+    <p class="meta">作成日：2026年8月25日</p>
+  </div>
+</header>
+
+<div class="shell">
+
+<nav class="toc" aria-label="目次">
+  <h2>目次</h2>
+  <ol>
+    <li><a href="#s1">本報告書の目的と対象範囲</a></li>
+    <li><a href="#s2">公演の概要と楽曲の利用形態</a></li>
+    <li><a href="#s3">本件で確認された権利の構造</a></li>
+    <li><a href="#s4">ビデオグラム録音の定義と本件での論点</a></li>
+    <li><a href="#s5">権利者への照会結果</a></li>
+    <li><a href="#s6">曲別の権利ステータス</a></li>
+    <li><a href="#s7">本件で判明した重要事項</a></li>
+    <li><a href="#s8">未解決事項と次回への申し送り</a></li>
+    <li><a href="#s9">ステータス用語の定義</a></li>
+    <li><a href="#s10">確認に用いた情報源</a></li>
+  </ol>
+</nav>
+
+<!-- ============ 1 ============ -->
+<section id="s1">
+  <h2 class="sec"><span class="num">01</span>本報告書の目的と対象範囲</h2>
+  <p class="lead">本報告書は、上記公演における楽曲の演奏・翻訳字幕表示・有料配信にあたり実施した権利確認作業の経緯と結果を記録したものである。</p>
+  <p>記載内容は、各権利者から受領したメール回答および電話での回答、JASRAC作品データベース（J-WID）の作品詳細画面、JASRAC公式サイトの案内、公演公式サイトおよび配信チケット販売ページの記載に基づく。確認できていない事項は「未確認」と明記した。</p>
+  <p>本報告書は確認時点の記録であり、法的助言ではない。また、記載内容が個々の利用の適法性を保証するものではない。</p>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="s2">
+  <h2 class="sec"><span class="num">02</span>公演の概要と楽曲の利用形態</h2>
+  <div class="tbl-wrap">
+    <table>
+      <tbody>
+        <tr><th class="rowlabel">公演</th><td>こころごすぺる Splash 〜 2026 SUMMER 〜／企画制作：The Vision（ザ・ビジョン）</td></tr>
+        <tr><th class="rowlabel">開催</th><td>2026年8月11日（火）　なかのZERO 小ホール　開演19:00</td></tr>
+        <tr><th class="rowlabel">演奏</th><td>全18曲。すべて生演奏（市販CD・配信音源等の原盤は不使用）</td></tr>
+        <tr><th class="rowlabel">字幕</th><td>全曲について、会場バックスクリーンおよび配信映像に原詞と訳詞を併記して表示</td></tr>
+        <tr><th class="rowlabel">配信</th><td>YouTubeでの有料ライブ配信（配信チケット2,000円・購入者限定）</td></tr>
+        <tr><th class="rowlabel">アーカイブ</th><td>ライブ配信終了後、約1ヶ月間の限定公開</td></tr>
+        <tr><th class="rowlabel">撮影体制</th><td>内部スタッフのみ。外部撮影業者なし。広告掲載・収益化なし</td></tr>
+        <tr><th class="rowlabel">楽曲の内訳</th><td>自社（The Vision）帰属のオリジナル6曲／日本の既存楽曲2曲／外国作品10曲</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="s3">
+  <h2 class="sec"><span class="num">03</span>本件で確認された権利の構造</h2>
+  <p>確認作業を通じて、今回の利用形態には次の複数の権利が関わることが判明した。これらは別個の権利であり、一つの手続きで全てがカバーされるわけではない。</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>権利<br>利用行為</th><th>内容</th><th>主な手続き先</th></tr></thead>
+      <tbody>
+        <tr>
+          <td data-label="権利&#10;利用行為">演奏</td>
+          <td data-label="内容">会場での生演奏</td>
+          <td data-label="手続き先">JASRAC</td>
+        </tr>
+        <tr>
+          <td data-label="権利&#10;利用行為">公衆送信（配信）</td>
+          <td data-label="内容">ライブ配信・アーカイブ配信で視聴させること</td>
+          <td data-label="手続き先">JASRAC（外国作品は一部管理の場合あり）</td>
+        </tr>
+        <tr>
+          <td data-label="権利&#10;利用行為">複製（ビデオグラム録音）</td>
+          <td data-label="内容">演奏を映像として固定すること。詳細は第4章</td>
+          <td data-label="手続き先">JASRAC／外国作品は音楽出版社を通じた指し値の確認が必要</td>
+        </tr>
+        <tr>
+          <td data-label="権利&#10;利用行為">翻訳（訳詞）の作成</td>
+          <td data-label="内容">原詞から新たな訳を作ること</td>
+          <td data-label="手続き先">JASRACの管理外。権利者（作詞者・作曲者・音楽出版社等）の許諾が必要</td>
+        </tr>
+        <tr>
+          <td data-label="権利&#10;利用行為">既存訳詞の利用</td>
+          <td data-label="内容">第三者が作成した既存の訳詞を歌唱・表示すること</td>
+          <td data-label="手続き先">訳詞がJASRAC登録済みなら申請でカバーされ得る。登録外なら訳詞者側の確認が必要</td>
+        </tr>
+        <tr>
+          <td data-label="権利&#10;利用行為">歌詞・訳詞の表示</td>
+          <td data-label="内容">歌詞や訳詞をスクリーン・配信映像に表示すること</td>
+          <td data-label="手続き先">歌唱とは別の利用行為。権利者により扱いが異なる</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">3-1．確認された根拠</h3>
+  <ul class="plain">
+    <li>JASRACは、編曲・訳詞・替え歌の作成に関する権利を管理していない。既存の楽曲を編曲したり歌詞を翻訳する場合は、作詞者・作曲者の意向を、当該楽曲の音楽出版社を通すなどして事前に確認する必要がある（JASRAC公式サイトの案内）。</li>
+    <li>外国作品を利用する場合、JASRACへの申込みの前に日本のサブパブリッシャーから同意を得る必要がある。使用料もサブパブリッシャーが指定した使用料率および最低使用料が適用される（JASRAC公式の案内資料「外国作品のご利用について」）。</li>
+    <li>J-WID上で配信が「一部管理（△）」と表示される作品は、当該利用分野についてJASRACに委託されていない部分が存在する。当該部分についてJASRACは許諾を出せない。</li>
+  </ul>
+
+  <h3 class="sub">3-2．翻訳の扱いによる3類型</h3>
+  <p>権利面の負荷は「どの曲を使うか」だけでなく「翻訳をどう扱うか」で大きく変わる。新たな翻訳を作成しない類型3が、手続きは最も軽い。1曲のみ、歌唱と字幕で扱いが異なる複合ケースがある。</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>類型</th><th>内容</th><th>該当曲</th></tr></thead>
+      <tbody>
+        <tr>
+          <td data-label="類型">類型1</td>
+          <td data-label="内容">日本語楽曲を日本語で歌い、英訳を新規作成して字幕表示</td>
+          <td data-label="該当曲">TOMORROW／夢をあきらめないで／オリジナル6曲</td>
+        </tr>
+        <tr>
+          <td data-label="類型">類型2</td>
+          <td data-label="内容">外国語楽曲を原語で歌い、日本語訳を新規作成して字幕表示</td>
+          <td data-label="該当曲">I Will Follow Him／永遠のひととき／Once／明日に架ける橋／Over the Rainbow／Awesome God／You Raise Me Up<br>※I Dreamed a Dreamは当初この類型で照会したが、権利元の方針により不可と判明</td>
+        </tr>
+        <tr>
+          <td data-label="類型">類型3</td>
+          <td data-label="内容">既存の訳詞を用い、新規の翻訳を作成しない</td>
+          <td data-label="該当曲">御名を掲げて／Edelweiss</td>
+        </tr>
+        <tr>
+          <td data-label="類型">複合</td>
+          <td data-label="内容">既存の日本語訳詞で歌唱し、字幕には日本語訳詞と、原詞から新規作成した英訳を併記</td>
+          <td data-label="該当曲">君は愛されるため生まれた<br>※歌唱は類型3、英訳字幕は類型1に相当。詳細は3-3</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h3 class="sub">3-3．複合ケース「君は愛されるため生まれた」の構造</h3>
+  <p>本楽曲のみ、歌唱と字幕で権利の扱いが分かれる。歌唱は既存の日本語訳詞（神明宏・朴鍾弼・B・B・J）を使用し、字幕にはその日本語訳詞と英訳を併記する。<strong>英訳は韓国語の原詞から新規に作成する必要がある。</strong></p>
+  <p>この構成により、関わる権利は次のとおり整理される。</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>対象</th><th>扱い</th><th>必要な確認</th></tr></thead>
+      <tbody>
+        <tr>
+          <td data-label="対象">歌唱（日本語訳詞）</td>
+          <td data-label="扱い">既存訳詞の利用。新規の創作は生じない</td>
+          <td data-label="必要な確認">訳詞のJASRAC登録状況の確認。登録外であれば訳詞者側への確認</td>
+        </tr>
+        <tr>
+          <td data-label="対象">字幕（日本語訳詞の表示）</td>
+          <td data-label="扱い">既存訳詞を画面に表示する利用</td>
+          <td data-label="必要な確認">歌唱とは別の利用行為として、訳詞の権利者への確認</td>
+        </tr>
+        <tr>
+          <td data-label="対象">字幕（英訳の表示）</td>
+          <td data-label="扱い">韓国語原詞からの新規翻訳</td>
+          <td data-label="必要な確認">原著作者側（KOMCAまたは日本のサブパブリッシャー）への翻訳許諾の確認。JASRACの管理外</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout">
+    <span class="ttl">翻訳元の選択による差</span>
+    <p>英訳の元を日本語訳詞とする場合、日本語訳詞自体が原詞の二次的著作物であるため、原著作者側に加えて訳詞者側の許諾も必要となる。<strong>韓国語の原詞から直接英訳することで、確認先の系統を一つ減らせる。</strong>本件では原詞からの英訳を前提とした。</p>
+    <p>ただし、日本語で歌唱しながら英訳を原詞から作成するため、画面上の日本語と英語が別ルートの訳となり、内容が対応しない箇所が生じ得る。字幕の実制作時に確認が必要となる。</p>
+  </div>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="s4">
+  <h2 class="sec"><span class="num">04</span>ビデオグラム録音の定義と本件での論点</h2>
+  <p>本件では複数の音楽出版社から「ビデオグラム録音の手続きが必要」との指摘を受けた。用語の定義と適用範囲について確認した結果を以下に記録する。</p>
+
+  <h3 class="sub">4-1．使用料規程上の定義</h3>
+  <p>JASRAC使用料規程 第2章第7節「ビデオグラム録音」は、著作物をDVD、Blu-ray Discなどの記録媒体に連続した影像とともに固定し、又はその固定物（ビデオグラム）を増製する場合を対象としている。</p>
+
+  <h3 class="sub">4-2．インターネット配信への適用</h3>
+  <p>一方、JASRAC公式サイトは「配信用動画コンテンツを制作する際のビデオグラム録音手続き」として、管理楽曲を動画コンテンツに収録してインターネット上で配信する場合は、配信に伴う手続きの前に、動画コンテンツの制作に伴う複製（ビデオグラム録音）の手続きが必要である旨を案内している。</p>
+  <p>同ページには、複製の手続きが不要となる場合として次が挙げられている。</p>
+  <ul class="plain">
+    <li>リアルタイムでの配信（ライブ、生配信）</li>
+    <li>国内作品のストリーム配信および有期限ダウンロード配信</li>
+    <li>動画製作のための複製手続きが済んでいるコンテンツの配信</li>
+    <li>映画・放送番組の二次利用コンテンツにおける、外国作品のストリーム形式または有期限のダウンロード形式での配信</li>
+    <li>海外で日本地域向けの許諾処理がされている映画やテレビドラマの配信</li>
+    <li>ライブラリーミュージック（業務用音源）のみを利用したコンテンツの配信</li>
+  </ul>
+  <p>料金形態は、国内作品が1分単価800円×収録時間、外国作品は「指し値」（音楽出版社を通すなどして指定を受ける額）とされている。</p>
+
+  <div class="callout callout--alert">
+    <span class="ttl">未解決の論点</span>
+    <p>使用料規程の条文は物理媒体を例示しているが、JASRAC公式サイトはインターネット配信用の動画コンテンツにも同手続きを適用すると案内している。上記の免除リストのうち、本件の会場でのライブ配信は「リアルタイムでの配信」に該当し得るが、<strong>外国作品のアーカイブ配信は免除リストのいずれにも明示的に該当しない。</strong></p>
+    <p>実際に、Sony Music Publishing (Japan) Inc.、Universal Music Publishing Group、渡辺音楽出版株式会社の3社が、いずれも独立して「アーカイブを伴う配信には海外権利者の事前許諾（ビデオグラム録音の手続き）が必要」との回答を示している。</p>
+    <p>したがって、本件のアーカイブ配信がビデオグラム録音の対象外であると断定できる根拠は確認できていない。<strong>本項は未確認事項として残る。</strong>確定させるには、作品コードを特定のうえJASRACインフォメーションデスクへ直接照会する必要がある。</p>
+  </div>
+
+  <div class="callout">
+    <span class="ttl">実務上の含意</span>
+    <p>ライブ配信のみで完結させるか、アーカイブ公開を行うかによって、外国作品に関する手続きの重さと費用が大きく変わる。アーカイブの有無は、企画段階で決定し、権利者への照会時に明示する必要がある。</p>
+  </div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="s5">
+  <h2 class="sec"><span class="num">05</span>権利者への照会結果</h2>
+
+  <div class="callout callout--alert">
+    <span class="ttl">照会の終了について</span>
+    <p>照会の過程で、アーカイブ配信に別途使用料が発生し得ることが判明した。当団体は小規模な非営利イベントであり予算に限りがあることから、企画内容を改めて検討する必要が生じたため、<strong>回答を受領した各社に対し、本件の問い合わせをいったん終了する旨を連絡した。</strong></p>
+    <p>連絡は、株式会社日音、株式会社コットンフィールズ、Universal Music Publishing Group、渡辺音楽出版株式会社、株式会社シンコーミュージック・エンタテイメント、Sony Music Publishing (Japan) Inc. の6社に対して行った。いずれも、案内への謝意と、改めて相談する可能性がある旨を添えている。</p>
+  </div>
+
+  <h3 class="sub">5-1．回答を受領した権利者</h3>
+
+  <div class="co">
+    <div class="co__head">
+      <p class="co__name">株式会社ミクタム</p>
+      <p class="co__songs">御名を掲げて（Lord, I Lift Your Name on High）</p>
+    </div>
+    <div class="co__body">
+      <p>電話でのやり取りにより完結。楽譜を複製・配布しない場合、ミクタムへの追加申請は不要であり、JASRACの通常申請で対応可能との回答。原曲が英語であり、日本語歌唱に英語原詞を併記する字幕表示、および有料配信・アーカイブの条件についても伝達済み。追加の費用・申請は不要。</p>
+      <span class="chip chip--ok">条件付きで利用可との回答あり</span>
+    </div>
+  </div>
+
+  <div class="co">
+    <div class="co__head">
+      <p class="co__name">株式会社日音</p>
+      <p class="co__songs">TOMORROW</p>
+    </div>
+    <div class="co__body">
+      <p>独自英訳の作成・利用に関する確認・許諾窓口は同社。専用の申請書は不要で、問い合わせメールを基に確認を進める方式。</p>
+      <p><strong>提出を求められた内容：</strong>開催日・開催場所・参加費などの記載がある企画概要、配信チャンネル名を含む配信詳細、歌唱者の情報・曲の長さ・テンポの変更などのアレンジ内容、原詞と英訳の対照表、英訳全文、字幕の表示方法および投影画面見本。</p>
+      <p><strong>不要と回答された事項：</strong>英訳文の著作権帰属に関する手続き、翻訳者の同意書・契約書、共同出版社や他の権利者への別途申請、特別なクレジット表記。</p>
+      <p><strong>その他：</strong>提出した英訳は修正を求められる可能性がある。使用料・手数料はJASRACの規定に従う（同社独自の使用料の有無については明示なし）。審査期間はイベント内容・翻訳内容により大幅に異なるため、一律の期間は提示できないとの回答。</p>
+      <p><strong>本件の対応：</strong>求められた資料の提出前に、問い合わせを終了する旨を連絡済み。</p>
+      <span class="chip chip--wait">照会終了（資料提出・審査には至らず）</span>
+    </div>
+  </div>
+
+  <div class="co">
+    <div class="co__head">
+      <p class="co__name">株式会社コットンフィールズ</p>
+      <p class="co__songs">夢をあきらめないで</p>
+    </div>
+    <div class="co__body">
+      <p>許諾窓口は同社。他の音楽出版社・著作権者・管理会社への申請についても同社が窓口。メールのやり取りにて判断・処理する方式。</p>
+      <p><strong>提出を求められた内容：</strong>イベント概要、配信詳細、英訳歌詞。</p>
+      <p><strong>英訳の扱い：</strong>英訳歌詞を同社が確認した後、許諾の可否を判断。同社が著作権登録している正式な英訳歌詞は存在せず、今回提出する英訳を正式登録する予定もない。</p>
+      <p><strong>指定クレジット：</strong>作詞・作曲：岡村孝子　Ⓒ 1987 by COTTONFIELDS CO.,LTD.</p>
+      <p><strong>使用料：</strong>「有料配信・頒布等が無ければ、JASRACへの通常申請で問題ない」との回答。本公演の配信チケットは有料であるため、この条件に該当しない可能性があったが、有料配信の場合の追加手続き・使用料の要否については回答を得ていない。</p>
+      <p><strong>本件の対応：</strong>英訳歌詞の提出前に、問い合わせを終了する旨を連絡済み。</p>
+      <span class="chip chip--wait">照会終了（審査には至らず）</span>
+    </div>
+  </div>
+
+  <div class="co">
+    <div class="co__head">
+      <p class="co__name">Sony Music Publishing (Japan) Inc.</p>
+      <p class="co__songs">明日に架ける橋／Over the Rainbow</p>
+    </div>
+    <div class="co__body">
+      <p><strong>配信について：</strong>YouTubeでのアーカイブを伴う動画配信は、ビデオグラム録音の手続きとして海外権利者の事前許諾が必要。最低使用料は動画1件・1曲につき10万円から。公開地域が全世界の場合は25万円から。</p>
+      <p><strong>手続き：</strong>上記の金額で利用する場合、同社が海外権利者へ正式な許諾依頼を行う。申請は同社のWebフォーム（https://smpj.jp/songs/video_before.html）から。製品番号・初回複製数などDVD用の項目は「該当なし」と記入。使用期間が1年未満の場合は1年間を選択のうえ、内容欄に具体的な期間を記入。</p>
+      <p><strong>期間・可否：</strong>正式申請の受領から回答まで2週間〜1ヶ月程度を要し、許諾が得られない場合もある。</p>
+      <p><strong>日本語訳詞について：</strong>訳詞の使用にも海外権利者の事前許諾が必要。許諾取得には時間を要し、許諾を得られない場合もある。</p>
+      <p><strong>本件の対応：</strong>Webフォームからの正式申請は行わず、問い合わせを終了する旨を連絡済み。</p>
+      <span class="chip chip--wait">照会終了（正式申請には至らず）</span>
+    </div>
+  </div>
+
+  <div class="co">
+    <div class="co__head">
+      <p class="co__name">Universal Music Publishing Group</p>
+      <p class="co__songs">I Will Follow Him／Awesome God／You Raise Me Up　※いずれも同社の管理外</p>
+    </div>
+    <div class="co__body">
+      <p><strong>管理先の案内（1回目）：</strong>Awesome God（JASRAC作品コード 0A6-6309-7）およびYou Raise Me Up（同 0N4-5044-6）の出版利用は株式会社シンコーミュージック・エンタテイメントが管理しており、同社へ申請するよう案内。I Will Follow Him（同 0I0-0944-2）は、出版者欄に「UNIVERSAL MUSIC PUBLISHING」の記載があることが問い合わせの理由と推測されるが、サブ出版の株式会社水星社へ連絡するよう案内。</p>
+      <p><strong>映像配信について（2回目・別担当者より）：</strong>当日の演奏およびそのライブ配信についてはJASRACへの申請のみで問題ない。<strong>アーカイブ配信を行う場合は、海外権利元からの指値による許諾が必要。</strong>使用内容により交渉開始金額が異なるため、金額の目安の案内前に、①配信地域、②配信期間、③配信予定のアカウントとプラットフォームの共有を求められた。</p>
+      <p><strong>本件の対応：</strong>上記3点の情報提供は行わず、問い合わせを終了する旨を連絡済み。</p>
+      <span class="chip chip--wait">照会終了（金額交渉には至らず）</span>
+    </div>
+  </div>
+
+  <div class="co">
+    <div class="co__head">
+      <p class="co__name">株式会社シンコーミュージック・エンタテイメント</p>
+      <p class="co__songs">Awesome God／You Raise Me Up</p>
+    </div>
+    <div class="co__body">
+      <p>問い合わせから20日後に返信を受領。予定しているコンサートの詳細の提示を求められた。</p>
+      <p><strong>本件の対応：</strong>コンサート詳細の提示は行わず、問い合わせを終了する旨を連絡済み。</p>
+      <span class="chip chip--wait">照会終了（詳細審査には至らず）</span>
+    </div>
+  </div>
+
+  <div class="co">
+    <div class="co__head">
+      <p class="co__name">渡辺音楽出版株式会社</p>
+      <p class="co__songs">I Dreamed a Dream</p>
+    </div>
+    <div class="co__body">
+      <p><strong>翻訳について：</strong>本楽曲における独自の日本語訳の作成、およびそれを使用した字幕表示は、権利元のライセンスポリシーにより一切認められていない。岩谷時子氏の日本語訳詞使用でのみ申請を受け付ける。</p>
+      <p><strong>配信について：</strong>配信およびアーカイブ公開（シンクロナイゼーション）を行う場合、同社経由で海外権利元へビデオグラム録音使用申請が必要。許諾が下りた際の金額の目安は基本使用料1曲15万円〜（フル尺使用のみ可）。</p>
+      <p><strong>譜面について：</strong>具体的な演奏形式（オーケストラ、ピアノ、アンサンブル、バンド形式など）により、演奏会で使用する譜面について別途出版物使用申請（編曲許諾申請）が必要となる場合がある。使用料も別途かかり、演奏形態によって金額が異なる。</p>
+      <p><strong>演出上の条件：</strong>映像と連動した演劇的な演出（シアトリカルな形）での演奏は禁止。楽曲のカット等は行わず「1曲フル尺」で演奏する純粋なコンサート形式であることが条件。</p>
+      <p><strong>本件の対応：</strong>申請書フォーマットの送付を依頼せず、問い合わせを終了する旨を連絡済み。</p>
+      <span class="chip chip--stop">照会終了（独自訳は利用不可との回答）</span>
+    </div>
+  </div>
+
+  <div class="co">
+    <div class="co__head">
+      <p class="co__name">LIBERA Records</p>
+      <p class="co__songs">永遠のひととき／Once（Merry Christmas Mr. Lawrence）</p>
+    </div>
+    <div class="co__body">
+      <p><strong>1回目：</strong>本楽曲の使用について同社には許諾権限がなく、株式会社キャブへ問い合わせるよう案内。LIBERA Musicはリベラが歌唱するリベラの楽曲としての利用に関する権利のみ許諾を受けており、その他の権利（字幕表示、配信、アーカイブ利用、原曲・編曲に関する権利等）は保有していない。</p>
+      <p><strong>2回目：</strong>まず株式会社キャブをはじめとする関係権利者への確認・許諾が必要。リベラ版の編曲を基に新たな編曲を行う場合も同様。リベラ版の歌詞や編曲を使用した演奏を予定する場合は、演奏内容の詳細が未確定のため現時点では可否を回答できない。関係権利者による許諾手続きが完了し演奏内容が確定した段階で、必要資料を添えて改めて相談するよう案内。演奏内容に加え、プログラム掲載内容、歌詞・字幕表記、クレジット表記等も確認対象となる。<strong>内容を確認した結果によっては希望に沿えない場合もある旨が明記されている。</strong></p>
+      <span class="chip chip--stop">関係権利者の許諾後に再審査</span>
+    </div>
+  </div>
+
+  <div class="co">
+    <div class="co__head">
+      <p class="co__name">株式会社フジパシフィックミュージック</p>
+      <p class="co__songs">I Dreamed a Dream／Over the Rainbow</p>
+    </div>
+    <div class="co__body">
+      <p>同社では審査・許諾を行わない。ミュージカル『レ・ミゼラブル』の楽曲であればI Dreamed a Dreamは渡辺音楽出版、映画『オズの魔法使』の楽曲であればOver the RainbowはSony Music Publishing Japanが管理しているとの案内。J-WIDで作品を確認のうえ、各社へ申請するよう案内された。</p>
+      <span class="chip chip--wait">管理先の案内のみ</span>
+    </div>
+  </div>
+
+  <h3 class="sub">5-2．回答未受領</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>問い合わせ先</th><th>対象曲</th><th>状況</th></tr></thead>
+      <tbody>
+        <tr><td data-label="問い合わせ先">株式会社水星社</td><td data-label="対象曲">I Will Follow Him</td><td data-label="状況">問い合わせに対する回答なし</td></tr>
+        <tr><td data-label="問い合わせ先">株式会社キャブ</td><td data-label="対象曲">永遠のひととき／Once</td><td data-label="状況">問い合わせに対する回答なし</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">5-3．照会前の段階にある案件</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>対象曲</th><th>想定される窓口</th><th>状況</th></tr></thead>
+      <tbody>
+        <tr>
+          <td data-label="対象曲">Edelweiss</td>
+          <td data-label="窓口">Concord（concord.com/licensing）</td>
+          <td data-label="状況">申請先ページの特定までリサーチを実施。同社は事前の問い合わせ窓口を設けておらず、Webフォームからの申請が本申請そのものとなる形式のため、申請に進む段階で担当者へ引き継ぐ方針としていた。フォームの様式が独自訳詞の作成・会場スクリーンへの表示までカバーするかは未確認</td>
+        </tr>
+        <tr>
+          <td data-label="対象曲">君は愛されるため生まれた</td>
+          <td data-label="窓口">未特定（第一報はJASRAC 録音・ビデオグラム・出版課を想定）</td>
+          <td data-label="状況">問い合わせ未着手。日本のサブパブリッシャーの登録がなく、連絡先が特定できていない。訳詞者側への確認も未着手</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout">
+    <p>Edelweissは、他社のように事前照会を経て条件を確認する形式ではなく、<strong>最初の接触が正式申請となる。</strong>他の楽曲と手続きの段取りが異なる点に留意が必要である。</p>
+  </div>
+
+  <h3 class="sub">5-4．J-WIDでの確認結果</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tbody>
+        <tr>
+          <th class="rowlabel">君は愛されるため生まれた</th>
+          <td>外国作品（韓国）。作品コードが2件存在（0N4-9806-6／1N1-9624-1）。著作者としてLEE MIN SUPに加えLEE MIN SEOBが登録されており、公演資料の作家表記（1名）と相違。所属団体はKOMCA。日本のサブパブリッシャーの登録なし。配信は「一部管理（△）」。<br>0N4-9806-6には訳詞者の登録がなく、1N1-9624-1には訳詞と読める登録が複数ある。日本語訳詞での歌唱にどちらの作品コードで申請すべきかは未確認。</td>
+        </tr>
+        <tr>
+          <th class="rowlabel">I Dreamed a Dream</th>
+          <td>正題は英語版（訳詞：KRETZMER HERBERT）。日本のサブ出版社として渡辺音楽出版株式会社が登録。配信は「JASRACが一部の著作権を管理」と表示され、作曲（SCHONBERG）・作詞（BOUBLIL）の両名に「この利用分野の一部の著作権をJASRACに委託しています」との特記が付されている。J-WIDの表示は、渡辺音楽出版の回答（別途申請が必要）と整合する。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="s6">
+  <h2 class="sec"><span class="num">06</span>曲別の権利ステータス（全18曲）</h2>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>曲</th><th>類型</th><th>窓口</th><th>状態</th></tr></thead>
+      <tbody>
+        <tr><td data-label="曲">M-1 I Will Follow Him</td><td data-label="類型">類型2</td><td data-label="窓口">水星社</td><td data-label="状態">問い合わせ済み・回答なし</td></tr>
+        <tr><td data-label="曲">M-2 御名を掲げて</td><td data-label="類型">類型3</td><td data-label="窓口">ミクタム</td><td data-label="状態">条件付きで利用可の回答あり（楽譜非配布）</td></tr>
+        <tr><td data-label="曲">M-3 TOMORROW</td><td data-label="類型">類型1</td><td data-label="窓口">日音</td><td data-label="状態">照会終了。資料提出・審査には至らず</td></tr>
+        <tr><td data-label="曲">M-4 夢をあきらめないで</td><td data-label="類型">類型1</td><td data-label="窓口">コットンフィールズ</td><td data-label="状態">照会終了。審査には至らず。有料配信時の扱いは未回答</td></tr>
+        <tr><td data-label="曲">M-5 弓を引け、矢を放て</td><td data-label="類型">自社</td><td data-label="窓口">The Vision</td><td data-label="状態">許諾取得済み。JASRAC未登録</td></tr>
+        <tr><td data-label="曲">M-6 君は愛されるため生まれた</td><td data-label="類型">複合</td><td data-label="窓口">未特定</td><td data-label="状態">照会未着手。サブパブリッシャーの登録なし。配信は一部管理</td></tr>
+        <tr><td data-label="曲">M-7 花色</td><td data-label="類型">自社</td><td data-label="窓口">The Vision</td><td data-label="状態">許諾取得済み。JASRAC未登録</td></tr>
+        <tr><td data-label="曲">M-8 永遠のひととき／Once</td><td data-label="類型">類型2</td><td data-label="窓口">キャブ → LIBERA Records</td><td data-label="状態">キャブから回答なし。許諾を得た場合もLIBERAの再審査が必要</td></tr>
+        <tr><td data-label="曲">M-9 明日に架ける橋</td><td data-label="類型">類型2</td><td data-label="窓口">Sony Music Publishing Japan</td><td data-label="状態">照会終了。正式申請には至らず</td></tr>
+        <tr><td data-label="曲">M-10 ハレルヤ！</td><td data-label="類型">自社</td><td data-label="窓口">The Vision</td><td data-label="状態">許諾取得済み。JASRAC未登録</td></tr>
+        <tr><td data-label="曲">M-11 荒地に川</td><td data-label="類型">自社</td><td data-label="窓口">The Vision</td><td data-label="状態">許諾取得済み。JASRAC未登録</td></tr>
+        <tr><td data-label="曲">M-12 Glory Glory Lord</td><td data-label="類型">自社</td><td data-label="窓口">The Vision</td><td data-label="状態">許諾取得済み。JASRAC未登録</td></tr>
+        <tr><td data-label="曲">M-13 I Dreamed a Dream</td><td data-label="類型">当初類型2</td><td data-label="窓口">渡辺音楽出版</td><td data-label="状態">照会終了。独自訳は利用不可・費用条件の提示を受領</td></tr>
+        <tr><td data-label="曲">M-14 Over the Rainbow</td><td data-label="類型">類型2</td><td data-label="窓口">Sony Music Publishing Japan</td><td data-label="状態">照会終了。正式申請には至らず</td></tr>
+        <tr><td data-label="曲">M-15 Edelweiss</td><td data-label="類型">類型3</td><td data-label="窓口">Concord（要検証）</td><td data-label="状態">申請先を特定。本申請の段階で担当引き継ぎ予定</td></tr>
+        <tr><td data-label="曲">M-16 Awesome God</td><td data-label="類型">類型2</td><td data-label="窓口">シンコーミュージック</td><td data-label="状態">照会終了。詳細審査には至らず</td></tr>
+        <tr><td data-label="曲">M-17 You Raise Me Up</td><td data-label="類型">類型2</td><td data-label="窓口">シンコーミュージック</td><td data-label="状態">照会終了。詳細審査には至らず</td></tr>
+        <tr><td data-label="曲">M-18 God is Love～愛こそがすべて</td><td data-label="類型">自社</td><td data-label="窓口">The Vision</td><td data-label="状態">許諾取得済み。JASRAC未登録</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout callout--alert">
+    <p>本報告書の作成時点において、<strong>独自翻訳字幕について完成した訳文を提出し最終許諾を受けた楽曲は存在しない。</strong>照会を行った各社に対しては、いずれも資料提出・審査の前段階で問い合わせを終了する旨を連絡している。</p>
+  </div>
+</section>
+
+<!-- ============ 7 ============ -->
+<section id="s7">
+  <h2 class="sec"><span class="num">07</span>本件で判明した重要事項</h2>
+
+  <h3 class="sub">7-1．外国作品のアーカイブ配信には追加手続きと費用が生じ得る</h3>
+  <p>Sony Music Publishing Japan、Universal Music Publishing Group、渡辺音楽出版の3社が、いずれも独立して、アーカイブを伴う配信には海外権利者の事前許諾が必要である旨を回答した。提示された金額は次のとおり。</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>権利者</th><th>提示された金額</th><th>備考</th></tr></thead>
+      <tbody>
+        <tr><td data-label="権利者">Sony Music Publishing Japan</td><td data-label="金額">動画1件・1曲につき10万円から（公開地域が全世界の場合は25万円から）</td><td data-label="備考">最低使用料。回答まで2週間〜1ヶ月。許諾が得られない場合もある</td></tr>
+        <tr><td data-label="権利者">渡辺音楽出版</td><td data-label="金額">基本使用料1曲15万円から</td><td data-label="備考">フル尺使用のみ可。譜面の出版物使用申請が別途必要な場合あり</td></tr>
+        <tr><td data-label="権利者">Universal Music Publishing Group</td><td data-label="金額">海外権利元の指値による（金額未提示）</td><td data-label="備考">配信地域・配信期間・アカウント／プラットフォームの情報提供後に交渉開始金額を案内</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>一方、UMPGは<strong>当日の演奏とライブ配信についてはJASRACへの申請のみで問題ない</strong>と明確に回答している。追加手続きが生じるのはアーカイブ配信であり、この区別が費用の分岐点となる。</p>
+
+  <h3 class="sub">7-2．独自翻訳を禁止する権利元が存在する</h3>
+  <p>I Dreamed a Dreamでは、権利元のライセンスポリシーにより独自日本語訳の作成・字幕表示が一切認められず、指定訳詞のみ申請可能と回答された。またSony Music Publishing Japanも、日本語訳詞の使用には海外権利者の事前許諾が必要であり、許諾を得られない場合があると回答している。</p>
+  <p>翻訳の可否は権利元の方針次第であり、<strong>事前照会を経ずに翻訳を作成・使用することにはリスクがある。</strong>翻訳作業の着手前に、可否を確認する順序が望ましい。</p>
+
+  <h3 class="sub">7-3．歌唱と歌詞の表示は別の利用行為である</h3>
+  <p>過去にJASRAC申請で歌唱できていた楽曲であっても、歌詞・訳詞をスクリーンや配信映像に表示することは別の利用にあたり、権利者の確認対象となる。既存訳詞を使う場合も、その訳詞自体が第三者の著作物である。</p>
+
+  <h3 class="sub">7-4．権利者ごとに対応は大きく異なる</h3>
+  <p>同じ利用条件を提示しても、ミクタムはJASRAC申請のみで可、渡辺音楽出版・Sony・UMPGは別途申請と費用が必要と、対応が分かれた。<strong>一社の回答から他社の扱いを推定することはできず、楽曲ごとの個別確認が必要である。</strong></p>
+
+  <h3 class="sub">7-5．外国作品では窓口の特定に段階を要する</h3>
+  <p>本件では、UMPG・フジパシフィックミュージック・LIBERA Recordsの3社が、いずれも「自社は窓口ではない」として他社を案内した。外国作品はオリジナルパブリッシャー、日本のサブパブリッシャー、原盤・アーティスト側の権利者が分かれており、最初の問い合わせ先が実際の窓口とは限らない。J-WIDの出版者欄でサブ出版社を確認してから照会するほうが、往復の回数を減らせる。</p>
+
+  <h3 class="sub">7-6．審査期間は事前に読めない</h3>
+  <p>日音は「イベント内容や翻訳内容により大幅に異なり、一律の期間は提示できない」と回答。Sonyは正式申請の受領から回答まで2週間〜1ヶ月程度としている。シンコーミュージックからの初回返信は問い合わせから20日後であった。<strong>海外権利者の許諾が絡む案件については、公演の企画確定と同時に曲ごとの権利所在を確認する必要がある。</strong></p>
+</section>
+
+<!-- ============ 8 ============ -->
+<section id="s8">
+  <h2 class="sec"><span class="num">08</span>未解決事項と次回への申し送り</h2>
+
+  <h3 class="sub">8-1．照会を終了した案件</h3>
+  <p>回答を受領した6社に対し、問い合わせを終了する旨を連絡した。いずれも資料提出・審査の前段階であり、正式な申請・許諾には至っていない。</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>権利者</th><th>終了時点で未了だった事項</th></tr></thead>
+      <tbody>
+        <tr><td data-label="権利者">株式会社日音</td><td data-label="未了事項">求められた資料の提出、英訳審査。同社独自の使用料の有無も未確認</td></tr>
+        <tr><td data-label="権利者">株式会社コットンフィールズ</td><td data-label="未了事項">英訳歌詞の提出、審査。有料配信の場合の追加手続き・使用料の要否も未回答</td></tr>
+        <tr><td data-label="権利者">Sony Music Publishing (Japan) Inc.</td><td data-label="未了事項">Webフォームからの正式申請</td></tr>
+        <tr><td data-label="権利者">Universal Music Publishing Group</td><td data-label="未了事項">配信地域・配信期間・アカウント／プラットフォームの情報提供、交渉開始金額の確認</td></tr>
+        <tr><td data-label="権利者">株式会社シンコーミュージック・エンタテイメント</td><td data-label="未了事項">コンサート詳細の提示、字幕・映像配信に関する回答の受領</td></tr>
+        <tr><td data-label="権利者">渡辺音楽出版株式会社</td><td data-label="未了事項">申請書フォーマットの受領、演奏形式の連絡、譜面の出版物使用申請の要否確認</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">8-2．回答を得られなかった案件</h3>
+  <ul class="plain">
+    <li><strong>株式会社水星社（I Will Follow Him）：</strong>問い合わせに対する回答なし。</li>
+    <li><strong>株式会社キャブ（永遠のひととき／Once）：</strong>問い合わせに対する回答なし。同社の回答が後続手続きの起点であったため、LIBERA Recordsへの再相談にも至っていない。</li>
+  </ul>
+
+  <h3 class="sub">8-3．照会前の段階で残った案件</h3>
+  <ul class="plain">
+    <li><strong>Edelweiss：</strong>申請先ページの特定まで完了。Concordは事前照会の窓口を設けておらず、Webフォームからの申請が本申請となるため、申請段階で担当者へ引き継ぐ方針としていた。フォームが独自訳詞の作成・会場スクリーンへの表示までカバーするかは未確認。</li>
+    <li><strong>君は愛されるため生まれた：</strong>JASRAC録音・ビデオグラム・出版課への照会、および訳詞者側への確認が未着手。2件の作品コードの使い分け、著作者LEE MIN SEOBの位置づけも未確認。韓国語原詞から英訳を作成する方針としたため、原著作者側への翻訳許諾の確認が必要となる。</li>
+  </ul>
+
+  <h3 class="sub">8-4．確認が必要なまま残った事項</h3>
+  <ul class="plain">
+    <li>アーカイブ配信がビデオグラム録音の対象となるか（第4章の論点）。作品コードを特定のうえJASRACインフォメーションデスクへの照会が必要。</li>
+    <li>日音の使用料が「JASRAC規定に従う」の範囲で完結するか、同社独自の使用料が発生し得るか。</li>
+    <li>UMPGの「撮影業者による録音・録画は別途申請」が、内部スタッフのみの撮影に適用されるか。</li>
+    <li>渡辺音楽出版が言う「映像と連動した演劇的な演出」に、歌詞字幕の表示が該当するか。</li>
+  </ul>
+
+</section>
+
+<!-- ============ 9 ============ -->
+<section id="s9">
+  <h2 class="sec"><span class="num">09</span>ステータス用語の定義</h2>
+  <p>進捗の誤認を防ぐため、本件では次の区分を用いた。</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>用語</th><th>意味</th></tr></thead>
+      <tbody>
+        <tr><td data-label="用語">正式許諾済み</td><td data-label="意味">使用内容と資料を提出し、最終的な許諾を受けた状態</td></tr>
+        <tr><td data-label="用語">条件付きで利用可との回答あり</td><td data-label="意味">一定の条件下で問題ないとの回答がある状態</td></tr>
+        <tr><td data-label="用語">許諾窓口確定・審査前</td><td data-label="意味">申請先と審査方法は確定したが、訳文等の審査は未了</td></tr>
+        <tr><td data-label="用語">管理先の案内のみ</td><td data-label="意味">問い合わせ先を案内されたのみの状態</td></tr>
+        <tr><td data-label="用語">回答なし</td><td data-label="意味">問い合わせ済みだが回答を受領していない</td></tr>
+        <tr><td data-label="用語">照会終了</td><td data-label="意味">当方の判断により、資料提出・審査に進まずに問い合わせを終了した状態。許諾を得た状態ではない</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout">
+    <p>「問い合わせを送った」ことと「許諾を得た」ことは異なる。本件の全期間を通じ、この区別を崩さないことを運用ルールとした。</p>
+  </div>
+</section>
+
+<!-- ============ 10 ============ -->
+<section id="s10">
+  <h2 class="sec"><span class="num">10</span>確認に用いた情報源</h2>
+  <ul class="plain">
+    <li>各権利者からのメール回答および電話での回答（一次情報。メール原本は案件フォルダに保管）</li>
+    <li>J-WID（JASRAC作品データベース）の作品詳細画面</li>
+    <li>JASRAC公式サイト「配信用動画コンテンツを制作する際のビデオグラム録音手続き」<br><span style="font-size:.82rem;color:var(--ink-soft);">https://www.jasrac.or.jp/users/internet/online.html</span></li>
+    <li>JASRAC公式サイト「YouTubeなどの動画投稿（共有）サービスでの音楽利用」<br><span style="font-size:.82rem;color:var(--ink-soft);">https://www.jasrac.or.jp/users/internet/ugc/</span></li>
+    <li>JASRAC使用料規程 第2章第7節「ビデオグラム録音」</li>
+    <li>JASRAC案内資料「外国作品のご利用について」</li>
+    <li>公演公式サイト（gospelconcert.jp）</li>
+  </ul>
+  <p>情報の優先順位は、①権利者からの回答、②権利者・JASRAC等の公式情報、③J-WIDでの確認結果、の順とし、これらと矛盾する推論は採用しなかった。</p>
+
+  <div class="foot">
+    <p>楽曲利用・翻訳字幕に関する権利確認報告書<br>公演「こころごすぺる Splash 〜 2026 SUMMER 〜」／The Vision（ザ・ビジョン）</p>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
